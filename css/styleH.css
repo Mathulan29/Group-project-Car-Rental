@@ -1,0 +1,272 @@
+#content nav div{
+    width:100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chngFont{
+    font-family: var(--poppins);
+}
+
+.wraper {
+    width: fit-content;
+    background: var(--light);
+    backdrop-filter: blur(20px);
+    color: var(--dark);
+    border-radius: 20px;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.wraper h1 {
+    font-size: 36px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.inputbox {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid var(--dark);  
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: var(--dark);
+    padding: 20px 45px 20px 20px;
+}
+
+.inputbox input::placeholder {
+    color: var(--dark-gray);
+}
+
+.lab {
+    text-align: left;
+    width: 8rem;
+    margin-right: 1rem;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0px 0px 5px var(--dark);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 3px;
+}
+
+a.btn {
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.focus {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* rent */
+
+.cardContainer {
+    padding: 5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--light);
+    border: solid var(--dark);
+    color:var(--dark);
+    font-family: var(--poppins);
+    border-radius:20px;
+    transition: 0.3s;
+    width: 20rem;
+    height: 30rem;
+    margin: 10px;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 var(--dark);
+}
+
+.card img{
+    width:100%;
+    height: 50%;
+    border-top-left-radius:17px;
+    border-top-right-radius:17px;
+    object-fit: contain;
+}
+
+.cardBottomBtn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+/* car filter */
+
+.carFilter {
+    display: flex;
+    justify-content: space-between;
+	width: 98%;
+    height: 4.5rem;
+	margin: 1rem 1rem 0;
+    padding: 5px 2px;
+    border-radius: 20px;
+    background-color: var(--light);
+}
+.carFilter .form-input {
+    text-align: center;
+	display: inline;
+	height: 36px;
+    min-width: 5rem;
+}
+
+.carFilter .form-input input, .carFilter .form-input select{
+	padding: 0 16px;
+	height: 100%;
+	border: none;
+	background: var(--grey);
+	border-radius: 36px;
+	outline: none;
+	color: var(--dark);
+}
+.carFilter .form-input button {
+	width: 36px;
+	height: 100%;
+	background: var(--blue);
+	color: var(--light);
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-radius: 36px;
+	cursor: pointer;
+}
+
+.rentConfrime{
+    display: none;
+    display:flex;
+}
+
+/*car more details*/
+
+.bigcard{
+    background-color: var(--grey);
+    box-shadow: 0 4px 8px 0 var(--dark);
+    transition: 0.3s;
+    width: 98%;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.carInfo{
+    display: flex;
+    justify-content: center;
+}
+
+.imagecontainer{
+    line-height: 25rem;
+}
+
+.imagecontainer p{
+    text-align: justify;
+    line-height:normal;
+    margin-top: 5rem;
+    color: red;
+}
+
+.carInfo img{
+    margin-top: 3rem;;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.data{
+    text-wrap: nowrap;
+    width: fit-content;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.data-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+.data-table td, .data-table th{
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    background-color: var(--light);
+    padding: 1rem;
+    color: var(--dark);
+  }
+
+.data-table th{
+    background-color: var(--blue);
+    color: var(--light);
+}
+
+.mini-table td{
+    padding: 2px;
+    border:none;
+}
+
+.creditCard{
+    margin: 2rem;
+    color: var(--red);
+}
+
+.paybtn{
+    background-color: var(--blue);
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    .carInfo{
+        display: block;
+        text-align: center;
+    }
+
+    .imagecontainer p{
+        margin-top: 1rem;
+    }
+}
